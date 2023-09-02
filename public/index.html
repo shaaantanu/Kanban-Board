@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+    <header>
+        <h1>Kanban Board</h1>
+    </header>
+    
+    <main>
+        <section class="column" id="todo-column" draggable="true" ondragstart="drag(event)">
+            <h2>To Do</h2>
+            <!-- Add more task cards here -->
+        </section>
+
+        <section class="column" id="doing-column" draggable="true" ondragstart="drag(event)">
+            <h2>Doing</h2>
+            <!-- Add task cards for the "Doing" column here -->
+        </section>
+
+        <section class="column" id="done-column" draggable="true" ondragstart="drag(event)">
+            <h2>Done</h2>
+            <!-- Add task cards for the "Done" column here -->
+        </section>
+    </main>
+
+    <footer>
+        <form id="add-task-form">
+            <label for="task-title">Title:</label>
+            <input type="text" id="task-title" required>
+            <label for="task-description">Description:</label>
+            <textarea id="task-description" required></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+    </footer>
+
+    <script src="app.js"></script> <!-- Include your JavaScript file here -->
+</body>
+</html>

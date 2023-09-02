@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS tasks (
+    id INTEGER PRIMARY KEY,
+    title TEXT NOT NULL,
+    description TEXT,
+    status TEXT NOT NULL
+);
+
+insert into tasks values (1, "To do Task", "task to do", "To Do");
+insert into tasks values (2, "Doing Task", "task doing", "Doing");
+insert into tasks values (3, "Done Task", "task done", "Done");
